@@ -8,6 +8,6 @@ hamburgerMenu.addEventListener(`click`, ()=>{
 });
 
 downloadResume.addEventListener(`click`, ()=>{
-    window.open("/img/albert.JPG")
+    window.open("./myCV.JPG")
 })
 
