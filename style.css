@@ -303,6 +303,9 @@ footer p {
         gap: 2rem;
         height: auto;
     }
+    .download-resume{
+        width: 100px;
+    }
     section{
         height: auto;
     }
@@ -316,13 +319,6 @@ footer p {
     }
     .btn-container{
         margin: 5px 0rem;
-    }
-    .btn{
-        font-weight: 600;
-        width: 80px;
-        font-size: 12px;
-        padding: 0.5rem 0.5rem;
-        border-radius: 1rem;
     }
     main .profile-img{
         height: 200px;
