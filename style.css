@@ -1,0 +1,419 @@
+/* body style */
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+/* headers style */
+h1,h2,h3{
+    padding: 1rem 0rem;
+    text-transform: capitalize;
+}
+h1{
+    font-size: 30px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navigation style */
+nav, .nav-links{
+    display: flex;
+}
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    font-size: 20px;
+}
+.nav-links{
+    text-transform: capitalize;
+    list-style: none;
+    gap: 2rem;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+.hamburger-menu{
+    display: none;
+}
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 20px;
+    cursor: pointer;
+}
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+main .profile-img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+.profile-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 80vh;
+}
+.profile-section p{
+    font-size: larger;
+    text-transform: capitalize;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.social-media-icon{
+    height: 2rem;
+}
+.btn-container{
+    margin: 1.5rem 0rem;
+}
+.btn{
+    font-weight: 600;
+    width: 5rem;
+    padding: 0.5rem 0.5rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+.btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+#about .about-container{
+    display: flex;
+    justify-content: center;
+}
+section{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.title{
+    padding-top: 1.2rem;
+    text-transform: capitalize;
+}
+.title p{
+    font-size: larger;
+}
+.about-container{
+    gap: 2rem;
+    width: 70%;
+    padding-bottom: 2rem;
+}
+#about .about-image img{
+    height: 400px;
+    border-radius: 20px;
+}
+#about .info{
+    width: 700px;
+}
+.about-info{
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 0.5rem;
+    width: 250px;
+}
+.details-container{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+.about-text{
+    padding: 0rem 2.5rem;
+    text-align: left;
+}
+/* experience section  */
+#experience .about-info{
+    width: 400px;
+    height: 300px;
+    line-height: 1.75rem;
+}
+#experience h2 {
+    padding-bottom: 2rem;
+}
+#experience article, .cert{
+    display: flex;
+    justify-content: space-around;
+    text-align: initial;
+}
+#experience article{
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+#experience .social-media-icon{
+    height: 1.5rem;
+    padding-right: 1rem;
+}
+
+/* project */
+#projects .btn{
+    width: 12rem;
+    font-size: medium;
+}
+.project-center img{
+    width: 400px;
+}
+.project-center{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 2rem;
+} 
+.project-container article{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+/* contact center */
+#contact{
+    height: 75vh;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 400px;
+}
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 1.5rem 0rem;
+}
+.contact-info a{
+    text-decoration: none;
+    color: black;
+}
+/* footer */
+footer{
+    height: 15vh;
+    text-align: center;
+}
+.footer-container{
+    display: grid;
+    place-items: center;
+}
+.navLinks-container{
+    text-align: center;
+    align-items: center;
+}
+footer p {
+    padding-top: 2rem;
+}
+@media screen  and (max-width: 600px){
+    .nav-links{
+        display: none; 
+    }
+    .hamburger-menu-links{
+        text-transform: capitalize;
+    list-style: none;
+    }
+    .hamburger-menu-links li {
+        margin: 1.5rem;
+    }
+    .hamburger-menu-links li a{
+        text-decoration: none;
+        color: black;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .menu-links{
+        display: none;
+        position: absolute;
+        top: 5rem;
+        right: 1.5rem;
+        background-color: white;
+    }
+    .open-menu-links{
+        display: block;
+    }
+    #about .about-container, #experience .details-container, .profile-section,#projects .project-center {
+        display: grid;
+    place-items: center;
+        gap: 0rem;
+    }
+    #about .about-container .details-container{
+        display: grid ;
+    place-items: center;
+    }
+    #about .about-image img{
+        height: 350px;
+    }
+    .details-container{
+        padding: 0.5rem;
+    }
+    #about .info-container{
+        line-height: 1.5rem;
+    }
+    section{
+        height: auto;
+    }
+    .profile-section{
+        padding-bottom: 5rem;
+    }
+    .title{
+        padding-top: 1rem;
+    }
+    footer .nav-links{
+        display: flex;
+    }
+}
+
+@media screen  and (max-width: 414px){
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+    .menu-links{
+        top: 100px;
+        right: 15px;
+    }
+    .profile-section{
+        gap: 2rem;
+        height: auto;
+    }
+    section{
+        height: auto;
+    }
+    .social-media{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+    .social-media-icon{
+        height: 20px;
+    }
+    .btn-container{
+        margin: 5px 0rem;
+    }
+    .btn{
+        font-weight: 600;
+        width: 80px;
+        font-size: 12px;
+        padding: 0.5rem 0.5rem;
+        border-radius: 1rem;
+    }
+    main .profile-img{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+    /* about section */
+    .about-container{
+        gap: 10px;
+        width: 210px;
+        padding-bottom: 15px;
+    }
+    #about .about-image img{
+        height: 200px;
+        border-radius: 20px;
+    }
+    #about .info{
+        width: 200px;
+    }
+    .about-info{
+        padding: 10px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        width: 200px;
+    }
+    .details-container{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .about-text{
+        padding: 0px 34px;
+        width: 200px;
+    }
+    /* experience section  */
+#experience .about-info{
+    width: 200px;
+    height: auto;
+    line-height: 20px;
+}
+#experience h2 {
+    padding-bottom: 2rem;
+}
+#experience article{
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+#experience .social-media-icon{
+    height: 20px;
+    padding-right: 5px;
+}
+/* project */
+#projects .title{
+    padding-top: 30px;
+}
+#projects .btn{
+    width: 80px;
+    font-size: 12px;
+}
+.project-center img{
+    width: 200px;
+}
+.project-center{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 2rem;
+} 
+.project-container article{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+/* contact */
+#contact{
+    height: 40vh;
+}
+.contact-container{
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 200px;
+}
+.contact-info{
+    display: inline-block;
+    gap: 0px;
+    padding: 10px 0px;
+}
+.nav-links{
+    margin-top: 50px;
+    gap: 10px;
+    font-size: 14px;
+}
+}
