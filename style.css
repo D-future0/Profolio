@@ -94,6 +94,10 @@ main .profile-img{
     color: white;
     background-color: black;
 }
+.download-resume{
+    width: 100px;
+}
+/* about section styling */
 #about .about-container{
     display: flex;
     justify-content: center;
@@ -124,12 +128,20 @@ section{
     width: 700px;
 }
 .about-info{
-    padding: 1.5rem;
     text-align: center;
     border: 1px solid black;
     border-radius: 20px;
     margin: 0.5rem;
     width: 250px;
+}
+#about .about-info{
+    margin: 0px auto;
+} 
+.about-info p {
+    padding-bottom: 0.5rem;
+}
+.about-info .social-media-icon{
+    padding-top: 0.5rem;
 }
 .details-container{
     display: flex;
@@ -138,12 +150,15 @@ section{
 }
 .about-text{
     padding: 0rem 2.5rem;
-    text-align: left;
+    text-align: justify;
+    text-align-last: justify;
+    font-size: larger;
+
 }
 /* experience section  */
 #experience .about-info{
     width: 400px;
-    height: 300px;
+    height: auto;
     line-height: 1.75rem;
 }
 #experience h2 {
@@ -155,12 +170,14 @@ section{
     text-align: initial;
 }
 #experience article{
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
+    gap: 2rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 #experience .social-media-icon{
     height: 1.5rem;
-    padding-right: 1rem;
 }
 
 /* project */
@@ -175,7 +192,8 @@ section{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
+    box-sizing: border-box;
     padding-bottom: 2rem;
 } 
 .project-container article{
@@ -184,12 +202,15 @@ section{
 }
 /* contact center */
 #contact{
-    height: 75vh;
+    height: 60vh;
+    display: block;
+    padding-top: 3rem;
 }
 .contact-container{
     display: flex;
     justify-content: space-around;
     gap: 1rem;
+    margin: 3rem;
     border: 1px solid black;
     border-radius: 20px;
     width: 400px;
@@ -208,7 +229,9 @@ section{
 /* footer */
 footer{
     height: 15vh;
+    padding-top: 10rem;
     text-align: center;
+    background-color: rgba(207, 207, 207, 0.493);
 }
 .footer-container{
     display: grid;
@@ -221,7 +244,7 @@ footer{
 footer p {
     padding-top: 2rem;
 }
-@media screen  and (max-width: 600px){
+@media screen  and (max-width: 1024px){
     .nav-links{
         display: none; 
     }
@@ -238,6 +261,10 @@ footer p {
     }
     .hamburger-menu{
         display: block;
+    }
+    .profile-section{
+        gap: 2rem;
+        height: auto;
     }
     .menu-links{
         display: none;
@@ -270,6 +297,9 @@ footer p {
     #about .info-container{
         line-height: 1.5rem;
     }
+    #about .about-info{
+        margin: 1rem ;
+    } 
     section{
         height: auto;
     }
@@ -302,10 +332,7 @@ footer p {
     #profile a {
         text-decoration: none;
     }
-    .profile-section{
-        gap: 2rem;
-        height: auto;
-    }
+    
     .download-resume{
         width: 100px;
     }
@@ -360,9 +387,10 @@ footer p {
     }
     /* experience section  */
 #experience .about-info{
-    width: 200px;
+    width: 300px;
     height: auto;
     line-height: 20px;
+    padding: 0rem 10px;
 }
 #experience h2 {
     padding-bottom: 2rem;
@@ -373,7 +401,6 @@ footer p {
 }
 #experience .social-media-icon{
     height: 20px;
-    padding-right: 5px;
 }
 /* project */
 #projects .title{
