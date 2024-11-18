@@ -135,7 +135,7 @@ section{
     width: 250px;
 }
 #about .about-info{
-    margin: 0px auto;
+    margin: 0px 8px;
 } 
 .about-info p {
     padding-bottom: 0.5rem;
@@ -181,20 +181,22 @@ section{
 }
 
 /* project */
+#projects{
+    height: auto;
+}
 #projects .btn{
-    width: 12rem;
+    width: 8rem;
     font-size: medium;
 }
 .project-center img{
-    width: 400px;
+    width: 300px;
 }
 .project-center{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-    box-sizing: border-box;
-    padding-bottom: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    width: 80vw;
 } 
 .project-container article{
     border: 1px solid black;
@@ -301,6 +303,7 @@ footer p {
         margin: 1rem ;
     } 
     section{
+        margin: 4rem auto;
         height: auto;
     }
     .profile-section{
@@ -336,7 +339,7 @@ footer p {
     .download-resume{
         width: 100px;
     }
-    section{
+    section{ 
         height: auto;
     }
     .social-media{
